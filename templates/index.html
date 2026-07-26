@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html style="background-color: black;">
+    <head>
+        <title>Chessbrah View Count</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='style.css' )}}" alt="Local Asset">
+    </head>
+    <body>
+        <div style="text-align: center;">
+            <img src="{{url_for('static', filename='chessbrah_logo.jpg') }}" alt="Local Asset" style="border-radius: 50%;">
+            <h1>Chessbrah View Count</h1>
+            <h2>{{ channel.view_count }}</h2>    
+        </div>
+    </body>
+</html>

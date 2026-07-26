@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    image: chessbrah-view-count
+    ports:
+      - "5000:5000"
+    env_file:
+      - ../../.env_yt
