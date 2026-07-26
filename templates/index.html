@@ -6,9 +6,12 @@
     </head>
     <body>
         <div style="text-align: center;">
-            <img src="{{url_for('static', filename='chessbrah_logo.jpg') }}" alt="Local Asset" style="border-radius: 50%;">
+            <a href="https://www.youtube.com/@chessbrah" >
+                <img src="{{url_for('static', filename='chessbrah_logo.jpg') }}" alt="Local Asset" style="border-radius: 50%;">
+            </a>
             <h1>Chessbrah View Count</h1>
-            <h2>{{ channel.view_count }}</h2>    
+            <h2>{{ view_count }} Views</h2>
+            <h2>Recorded on {{ timestamp }} UTC</h2>    
         </div>
     </body>
 </html>
