@@ -1,0 +1,1 @@
+docker run -p 5000:5000 --env-file ../../.env_yt chessbrah-view-count
