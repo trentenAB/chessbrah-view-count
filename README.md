@@ -57,3 +57,7 @@
 - Understanding free-tier tradeoffs (spin-down, cold starts)
 - Connecting a deployed app to a managed database (internal vs. external connection strings, SSL requirements)
 - Git-based deployment workflows (push to GitHub → auto-deploy)
+
+
+NOTES:
+- Cron does not run in wsl when wsl is not connected to windows e.g. when the windows machine is asleep. To run a shell script from wsl anyways, you can setup a window's task in task scheduler. In this case the task launches wsl: C:\Windows\System32\wsl.exe. Then as an "argument" we run the shell script that would normally run in cron: bash /path/to/script.sh 
