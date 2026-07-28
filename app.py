@@ -14,4 +14,4 @@ def home():
     timestamp = last_entry['logged_at'].strftime('%B %d, %Y @ %H:%M')
     return render_template('index.html', view_count=view_count, timestamp=timestamp)
 
-app.run(host='0.0.0.0', port=5000, debug=True)
+app.run(host='0.0.0.0', port=5000)
